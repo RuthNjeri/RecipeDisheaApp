@@ -1,0 +1,23 @@
+package com.example.waiganjo.nihondishes;
+
+import java.util.ArrayList;
+
+/**
+ * Created by Waiganjo on 11/19/2015.
+ */
+public class Utility {
+
+    public static ArrayList<Dish> getAllDishes(){
+        String[] names={"Japanese Style Deep Fried Shrimp ","Sukiyaki ","Tofu Hiyayakko ","Yakisoba Chicken ","Shoyu Chicken ","Chicken Katsu ","Japanese Beef Stir-Fry ","Japanese Shrimp Sauce I ","Yakitori Chicken ","Ashley's Chicken Katsu with Tonkatsu Sauce ","Yum Yum Sauce ","Gyoza Sauce ","Chicken Yakisoba ","Miso and Soy Chilean Sea Bass ","Japanese-Style Cabbage Salad ","Miso Braised Pork ","Sukiyaki Beef ","Hiyashi Chuka Noodles ","Coffee Jelly ","Japanese Soup with Tofu and Mushrooms ","Miso Soup with Shiitake Mushrooms ","Omuraisu (Japanese Rice Omelet) ","Tofu Hiyayakko "};
+        String [] desc={"Shrimp are seasoned and coated with crispy panko crumbs to make the easiest, tastiest deep-fried shrimp ever! ","Serve this simple Japanese dish over thin Japanese noodles or rice, if desired. ","This is one of the really traditional easy dishes in Japan. My dad likes it so much. We often eat this dish with the rice, miso soup, grilled fish and Japanese pickles in the morning. ","Japanese buckwheat flour noodles with chicken at their best! Noodles can be found in an Asian foods market. ","Shoyu Chicken is a popular Hawaiian dish. It is often served with rice. The word shoyu is Japanese for soy sauce. Let the chicken soak in the marinade for at least an hour, the longer the better. ","This is my family recipe for Chicken Katsu - Japanese style fried chicken. Can also be used to make Tonkatsu, just use pork cutlets instead of chicken. Serve with white rice and tonkatsu sauce. ","Tender beef strips are quickly stir-fried with crisp and colorful vegetables to make this delicious restaurant-style dinner in your own kitchen. ","This is the shrimp sauce found in Japanese steakhouses. It is sweet and pinkish-orangish in color. You can substitute fat-free mayo, butter, and 0-calorie sugar, and it still tastes great. ","Chicken is marinated in a soy sauce, sake and ginger sauce, then threaded onto skewers and broiled with leeks for an easy, tasty and fun meal. ","A recipe for delicious Japanese fried chicken and an accompanying Tonkatsu sauce. Serve with your choice of shredded cabbage, rice, or even mashed potatoes. ","Japanese steakhouse white sauce. ","Use this slightly-spicy Japanese dipping sauce for pot stickers or spring rolls. ","This traditional Japanese yakisoba noodle dish includes cabbage and chicken in a spicy sauce. ","This Sea Bass will melt in your mouth! Delicious, I had this at Blue Water Grill in NYC and it was by far the best sea bass I've ever had in my life. This recipe is as close as I can get to tasting like the restaurants. They served it with bok choy and sticky rice on the side. ","This fabulous salad recipe is comparable to what is served in Japanese restaurants. It's vegan and tastes great! It goes well with traditional Japanese foods and also with American foods instead of coleslaw. ","Japanese comfort food! The smell will draw you in! ","Japanese Green Sukiyaki Beef. Serve with steamed rice. ","This is a common cold noodle salad in Japan, and always great to eat when the weather is hot. Enjoy! ","A refreshing Japanese summertime treat! My favorite way to serve it is with frozen whipped cream and chocolate sauce, although it's also delicious with ice cream, regular whipped cream, or flavored coffee cream! It can be served solid in glasses, or cubed in bowls. ","Miso is a fermented soy bean paste that adds a rich flavor. This is a quick, healthy soup that is very popular in Japanese cuisine. ","A delicious Japanese soup with mushrooms and tofu. ","Similar in flavor and style to hash browns and eggs, this delicious Japanese dish works wonderfully as breakfast, lunch, or dinner, especially for those not completely ready for the traditional raw fish or white rice. This is my sister's most requested dish. ","This is one of the really traditional easy dishes in Japan. My dad likes it so much. We often eat this dish with the rice, miso soup, grilled fish and Japanese pickles in the morning. "};
+        int[] images={R.mipmap.img1,R.mipmap.img2,R.mipmap.img3,R.mipmap.img4,R.mipmap.img5,R.mipmap.img6,R.mipmap.img7,R.mipmap.img8,R.mipmap.img9,R.mipmap.img10,R.mipmap.img11,R.mipmap.img12,R.mipmap.img13,R.mipmap.img14,R.mipmap.img15,R.mipmap.img16,R.mipmap.img16,R.mipmap.img17,R.mipmap.img18,R.mipmap.img19,R.mipmap.img20,R.mipmap.img21,R.mipmap.img22,R.mipmap.img23};
+         ArrayList<Dish> data=new ArrayList<Dish>();
+
+        for (int x=0;x<names.length;x++)
+        {
+          data.add(new Dish(x,images[x],names[x],desc[x]));
+        }
+        return data;
+    }
+
+}
